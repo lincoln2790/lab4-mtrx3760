@@ -3,6 +3,7 @@
 
 #include "Checkout.h"
 #include "CustomerAllocator.h"
+#include <stdlib.h>  
 
 class Simulator{
     public:
@@ -11,6 +12,7 @@ class Simulator{
         void report(); // prints overall mean length for simulation
     private: 
         Checkout checkout;
+
         CustomerAllocator customerAllocator;
 };
 #endif

@@ -1,13 +1,12 @@
 #include "Checkout.h"
 
-Checkout::Checkout(int numStandard, int numExpress): NumStandard(numStandard), NumExpress(numExpress){
-    for(int i = 0; i<numStandard; i++){
+void Checkout::SetNumTellers(int numStd, int numExp){
+    for(int i = 0; i<numStd; i++){
         Teller teller;
         StandardTellers.push_back(teller);
     }
-    for(int i = 0; i<numExpress; i++){
+    for(int i = 0; i<numExp; i++){
         Teller teller;
         ExpressTellers.push_back(teller);
     }
-
-}
+};
