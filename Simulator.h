@@ -12,7 +12,5 @@ class Simulator{
         void report(); // prints overall mean length for simulation
     private: 
         Checkout checkout;
-
-        CustomerAllocator customerAllocator;
 };
 #endif

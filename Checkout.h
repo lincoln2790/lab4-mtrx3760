@@ -8,6 +8,7 @@ class Checkout{
     private:
         std::vector<Teller> StandardTellers;
         std::vector<Teller> ExpressTellers;
+        CustomerAllocator customerAllocator;
     public:
         void SetNumTellers(int numStd, int numExp);
 };
