@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "Teller.h"
+#include "CustomerAllocator.h"
 
 class Checkout{
     private:
