@@ -7,14 +7,16 @@
 #include "Teller.h"
 class Checkout{
     private:
+        static const int maxCustomersPerCycle = 4;
         std::unordered_map<std::string, std::vector<Teller> > Tellers;
 
     public:
-        // Checkout(int numStd, int numExp);
+        // Checkout(int numStd, int numExp); remember to replace
         void CheckoutInit(int numStd, int numExp);
         int FindShortestQueue(std::string tellerType);
         void AddNewCustomers();
-        // void CheckInit();
+        void ProcessTellers();
+        float Report();
 };
 
 
