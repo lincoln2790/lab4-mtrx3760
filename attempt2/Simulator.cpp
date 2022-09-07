@@ -2,20 +2,22 @@
 #include "Checkout.h"
 #include <iostream>
 
+// Initialises checkout with specified numbers of standard, express tellers
 Simulator::Simulator(int numStd, int numExp){    
     checkout.CheckoutInit(numStd,numExp);
-    // checkout.CheckInit();
-    
     std::cout << "Simulator initialisation complete"<< std::endl;
 }
-void Simulator::runSimulation(){
+
+float Simulator::runSimulation(){
+    // for <numCycles> iterations, adds customers, and tellers processes items
     for(int i = 0; i<numCycles;i++){
-        std::cout << "\nRunning simulation cycle " << i << std::endl;
+        std::cout << "\nRUNNING CYCLE: " << i << std::endl;
         checkout.AddNewCustomers();
         checkout.ProcessTellers();
-        
     }
-    std::cout << "Overall Mean: " << checkout.Report() << std::endl;
-    
+    // after this, tellers process until no customers are left
+    while(checkout.ProcessTellers()){};
+
+    return checkout.Report(); // returns the mean wait time calculated by Report()
 }
 

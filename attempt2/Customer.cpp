@@ -3,19 +3,22 @@
 
 Customer::Customer(): CyclesInQueue(0){
     NumItems = rand() % MaxItems;
+    // initialises with random number of items from 0-15
 }
 
 int Customer::getNumItems(){
-    return NumItems;
+    return NumItems; //returns number of items
 }
+
 int Customer::getCycles(){
-    return CyclesInQueue;
+    return CyclesInQueue; //returns number of cycles
 }
 
 void Customer::incrementCyclesInQueue(){
-    CyclesInQueue++;
+    CyclesInQueue++; //increments cycles in queue
 }
 
 void Customer::removeItem(){
-    NumItems--;
+    NumItems -= 2; 
+    // removes 2 items per cycle for front customer
 }
