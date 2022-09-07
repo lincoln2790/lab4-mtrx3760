@@ -1,3 +1,6 @@
+// Simulator.h
+// Header file for simulator class
+// Simulator contains a checkout which it runs a simulation on over 500 cycles.
 #ifndef SIMULATOR_H
 #define SIMULATOR_H
 #include "Checkout.h"

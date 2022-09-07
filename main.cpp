@@ -22,14 +22,14 @@ int main(){
 
     // Printing out the resulting mean from each simulation
     std::cout << "------------------------------------------------------" << std::endl;
-    std::cout << "Overall Mean for simulation 1: " << mean1 << std::endl;
-    std::cout << "Overall Mean for simulation 2: " << mean2 << std::endl;
-    std::cout << "Overall Mean for simulation 3: " << mean3 << std::endl;
-    std::cout << "Overall Mean for simulation 4: " << mean4 << std::endl;
-    std::cout << "Overall Mean for simulation 5: " << mean5 << std::endl;
-    std::cout << "Overall Mean for simulation 6: " << mean6 << std::endl;
-    std::cout << "Overall Mean for simulation 7: " << mean7 << std::endl;
-    std::cout << "Overall Mean for simulation 8: " << mean8 << std::endl;
+    std::cout << "Simulation with 8 Standard, 0 Express: Mean wait time = " << mean1 << std::endl;
+    std::cout << "Simulation with 7 Standard, 1 Express: Mean wait time = " << mean2 << std::endl;
+    std::cout << "Simulation with 6 Standard, 2 Express: Mean wait time = " << mean3 << std::endl;
+    std::cout << "Simulation with 5 Standard, 3 Express: Mean wait time = " << mean4 << std::endl;
+    std::cout << "Simulation with 4 Standard, 4 Express: Mean wait time = " << mean5 << std::endl;
+    std::cout << "Simulation with 3 Standard, 5 Express: Mean wait time = " << mean6 << std::endl;
+    std::cout << "Simulation with 2 Standard, 6 Express: Mean wait time = " << mean7 << std::endl;
+    std::cout << "Simulation with 1 Standard, 7 Express: Mean wait time = " << mean8 << std::endl;
     std::cout << "------------------------------------------------------" << std::endl;
     return 0;
 }

@@ -1,3 +1,5 @@
+// Customer.cpp
+// Implementation for Customer class
 #include "Customer.h"
 #include <cstdlib>
 

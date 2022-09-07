@@ -1,5 +1,12 @@
+// Teller.h
+// Header for teller class
+// Teller class has a queue of customers which it processes each cycle by removing items from 
+// its front customer until they have no items, then removes them from queue.
+//  Teller counts the number of customers processed and aggregates the number of cycles each 
+// processed customer waited in order to find a mean wait time.
 #ifndef TELLER_H
 #define TELLER_H
+
 #include <iostream>
 #include <deque>
 #include "Customer.h"
@@ -21,8 +28,5 @@ class Teller{
         void incrementCustCycles(); // increments cycles for each customer
         float getAvgCyclesPerProcessedCustomer(); 
         // after all customers are processed, computes and returns the mean cycles for the queue
-
 };
-
-
 #endif

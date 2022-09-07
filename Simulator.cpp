@@ -1,3 +1,5 @@
+// Simulator.cpp
+// Implementation for Simulator class functions
 #include "Simulator.h"
 #include "Checkout.h"
 #include <iostream>

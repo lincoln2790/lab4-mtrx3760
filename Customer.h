@@ -1,3 +1,7 @@
+// Customer.h
+// Header for customer class
+// Customer class has a random number of items, and counts the 
+// number of cycles it has been in its queue.
 #ifndef CUSTOMER_H
 #define CUSTOMER_H
 
@@ -17,6 +21,4 @@ class Customer{
         void removeItem(); //decrements NumItems
         void incrementCyclesInQueue();  //increments CyclesInQueue
 };
-
-
 #endif

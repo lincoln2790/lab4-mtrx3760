@@ -1,3 +1,5 @@
+// Checkout.cpp
+// Implementation for checkout class
 #include "Checkout.h"
 #include "Customer.h"
 

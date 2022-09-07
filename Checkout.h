@@ -1,3 +1,8 @@
+// Checkout.h
+// Header for checkout class
+// Checkout contains a hashmap with values of vectors of tellers,
+// one for each type of teller, Express and Standard.
+// Contains functionality to add/allocate customers to the shortest queue, process its tellers
 #ifndef CHECKOUT_H
 #define CHECKOUT_H
 
